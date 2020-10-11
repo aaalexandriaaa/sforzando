@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Piece, pieces
 
 def home(request):
-  return HttpResponse('<h1>Hello /ᐠ｡‸｡ᐟ\ﾉ</h1>')
+  return render(request, 'home.html')
 
 def about(request):
-    return render(request, 'about.html')
+  return render(request, 'about.html')
 
 def pieces_index(request):
-    return render(request, 'pieces/index.html', { 'pieces': pieces })   
+  pieces = Piece.objects.all()
+  return render(request, 'pieces/index.html', { 'pieces': pieces })   
