@@ -16,6 +16,10 @@
         <p>This piece is on your wishlist</p>
         {% endif %}
     </div>
+    <div class="card-action">
+        <a href="{% url 'pieces_update' piece.id %}">Edit</a>
+        <a href="{% url 'pieces_delete' piece.id %}">Delete</a>
+    </div>
 </div>
 
 {% endblock %}
