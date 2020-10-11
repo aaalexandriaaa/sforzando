@@ -13,5 +13,5 @@ class Piece:
 pieces = [
     Piece('I know that my redeemer Liveth', 'GF Handel', 'Baroque', 'Piano', 'Soprano', True),
     Piece('Come Unto Him', 'GF Handel', 'Baroque', 'Piano', 'Soprano', True),
-    Piece('Fugue No. 2', 'JS Bach', 'Baroque', 'Piano', 'n/a', True)
+    Piece('Fugue No. 2', 'JS Bach', 'Baroque', 'Piano', 'n/a', False)
 ]
