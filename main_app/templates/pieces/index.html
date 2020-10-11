@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Song List</h1>
+
+{% for piece in pieces %}
+<div class="card">
+    <div class="card-content">
+        <span class="card-title">{{ piece.name }}</span>
+        'name', 'composer', 'period', 'instrument', 'voice', 'own'):
+        <p>Composer: {{ piece.composer }}</p>
+        <p>Period: {{ piece.period }}</p>
+        <p>Instrument: {{ piece.instrument }}</p>
+        <p>Vocal Part: {{ piece.voice }}</p>
+        {% if piece.own == True %}
+        <p>You own this piece</p>
+        {% else %}
+        <p>This piece is on your wishlist</p>
+        {% endif %}
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}
