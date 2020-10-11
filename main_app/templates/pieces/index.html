@@ -6,7 +6,7 @@
 {% for piece in pieces %}
 <div class="card">
     <div class="card-content">
-        <a href="/pieces/{{ piece.id }}">
+        <a href="{% url 'detail' piece.id %}">
             <span class="card-title">{{ piece.name }}</span>
             <p>Composer: {{ piece.composer }}</p>
             <p>Period: {{ piece.period }}</p>

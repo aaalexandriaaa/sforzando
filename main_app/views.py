@@ -10,4 +10,8 @@ def about(request):
 
 def pieces_index(request):
   pieces = Piece.objects.all()
-  return render(request, 'pieces/index.html', { 'pieces': pieces })   
+  return render(request, 'pieces/index.html', {'pieces': pieces})
+
+def pieces_detail(request, piece_id):
+  piece = Piece.objects.get(id=piece_id)
+  return render(request, 'pieces/detail.html', { 'piece': piece })
