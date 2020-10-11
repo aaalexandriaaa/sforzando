@@ -9,6 +9,7 @@ class Piece(models.Model):
     instrument = models.CharField(max_length=100)
     voice = models.CharField(max_length=100)
     own = models.CharField(max_length=100)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 # fields: 'name', 'composer', 'period', 'instrument', 'voice', 'own'
     def __str__(self):
         return self.name

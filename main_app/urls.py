@@ -9,4 +9,5 @@ urlpatterns = [
   path('pieces/create/', views.PieceCreate.as_view(), name='pieces_create'),
   path('pieces/<int:pk>update', views.PieceUpdate.as_view(), name='pieces_update'),
   path('pieces/<int:pk>delete', views.PieceDelete.as_view(), name='pieces_delete'),
+  path('accounts/signup/', views.signup, name='signup'),
 ]
