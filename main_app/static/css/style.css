@@ -1,7 +1,54 @@
+:root {
+  /* Current Scheme */
+  /* --light: #dfdbc8;
+  --mid: #40565c;
+  --dark: #0b0f2e;
+  --text: #0b0f2e;
+  --accent: #9e594f; */
+
+  /* Grand Budapest Scheme */
+  --light: #79a4ac;
+  --mid: #436f79;
+  --dark: #091c2c;
+  --text: #13212c;
+  --accent: #e4a19b;
+
+  /* Experiment Scheme */
+  /* --light: #79a4ac;
+  --mid: #3d7f8f;
+  --dark: #10314c;
+  --text: #13212c;
+  --accent: #dbb0ac; */
+
+  /* Floral Scheme */
+  /* --light: #e6d6d5;
+  --mid: #849182;
+  --dark: #131613;
+  --text: #16212e;
+  --accent: #c0cad2; */
+
+  /* italy */
+  /* --light: #6685b6;
+  --mid: #4f5560;
+  --dark: #401a0b;
+  --text: #111312;
+  --accent: #884e35; */
+  
+  /* original palette scheme */
+  /* --light: #e2e1dc;
+  --mid: #495E63;
+  --dark: #0b0f2e;
+  --text: #0b0f2e;
+  --accent: #b0736a; */
+}
+
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: var(--mid);
+  color: var(--text);
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 main {
@@ -11,9 +58,44 @@ main {
 footer.page-footer {
   padding-top: 0;
   text-align: right;
-  background-color: rgb(102, 125, 167);
+  background-color: var(--accent);
 }
 
-nav{
-  background-color: rgb(102, 125, 167);
+nav {
+  background-color: var(--accent);
+}
+
+a {
+  /* color: var(--text); */
+  color: #000000;
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--dark);
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.card {
+  border-radius: 25% 10%;
+  width: 18rem;
+  margin: 15px 7px;
+  background-color: var(--light);
+  display: inline-block;
+  /* overflow: visible; */
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 5px;
+}
+
+.card-title{
+  font-weight:900 !important;
+  color:var(--text) !important;
+}
+
+.brand-logo{
+  font-family: 'Berkshire Swash', cursive;
 }

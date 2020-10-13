@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -18,17 +21,17 @@
         <nav>
             <div class="nav-wrapper">
                 <ul>
-                    <li><a href="/" class="left brand-logo">&nbsp;&nbsp;Sforzando</a></li>
+                    <li><a href="/" class="center brand-logo" style="color:#13212c;">&nbsp &nbspSforzando</a></li>
                 </ul>
                 <ul class="right">
-                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'about' %}" style="color:#13212c;">About</a></li>
                     {% if user.is_authenticated %}
-                    <li><a href="{% url 'pieces_create' %}">Add Piece</a></li>
-                    <li><a href="{% url 'index' %}">View All My Pieces</a></li>
-                    <li><a href="{% url 'logout' %}">Log Out</a></li>
+                    <li><a href="{% url 'pieces_create' %}" style="color:#13212c;">Add Piece</a></li>
+                    <li><a href="{% url 'index' %}" style="color:#13212c;">View All My Pieces</a></li>
+                    <li><a href="{% url 'logout' %}" style="color:#13212c;">Log Out</a></li>
                     {% else %}
-                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
-                    <li><a href="{% url 'login' %}">Log In</a></li>
+                    <li><a href="{% url 'signup' %}" style="color:#13212c;">Sign Up</a></li>
+                    <li><a href="{% url 'login' %}" style="color:#13212c;">Log In</a></li>
                     {% endif %}
                 </ul>
             </div>
