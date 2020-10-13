@@ -99,3 +99,13 @@ h1 {
 .brand-logo{
   font-family: 'Berkshire Swash', cursive;
 }
+
+.brand-logo{
+  height:125px;
+}
+
+/* original */
+/* .brand-logo{
+  height: 100px;
+  margin-top: 10px;
+} */
