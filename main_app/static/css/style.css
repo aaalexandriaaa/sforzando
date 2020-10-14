@@ -65,6 +65,10 @@ nav {
   background-color: var(--accent);
 }
 
+nav.left{
+  
+}
+
 a {
   /* color: var(--text); */
   color: #000000;
