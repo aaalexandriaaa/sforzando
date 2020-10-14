@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import environ,
-# os, django_heroku
+import environ,django_heroku
+# os, // don't need os unless i'm using stuff from heroku docs
 
 env = environ.Env(
     # set casting, default value
