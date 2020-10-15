@@ -17,3 +17,5 @@ Sforzando
 * Python
 * Django
 * PostgreSQL
+* BoxySVG
+* Materialize
