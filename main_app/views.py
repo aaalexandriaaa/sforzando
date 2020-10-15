@@ -26,7 +26,7 @@ def pieces_detail(request, piece_id):
   
 class PieceCreate(LoginRequiredMixin, CreateView):
   model = Piece
-  fields = ['name', 'composer', 'period', 'instrument', 'voice', 'own']
+  fields = ['name', 'composer', 'period', 'instrument', 'voice']
 
   def form_valid(self, form):
     form.instance.user = self.request.user  # form.instance is the cat
@@ -34,7 +34,7 @@ class PieceCreate(LoginRequiredMixin, CreateView):
   
 class PieceUpdate(LoginRequiredMixin, UpdateView):
   model = Piece
-  fields = ['name', 'composer', 'period', 'instrument', 'voice', 'own']
+  fields = ['name', 'composer', 'period', 'instrument', 'voice']
 
 class PieceDelete(LoginRequiredMixin, DeleteView):
   model = Piece
