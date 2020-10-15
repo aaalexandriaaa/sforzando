@@ -19,3 +19,6 @@ Sforzando
 * PostgreSQL
 * BoxySVG
 * Materialize
+
+
+![photo](main_app/static/images/sforzandologo.png)
