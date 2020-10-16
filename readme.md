@@ -6,6 +6,7 @@
   - [2. Public Trello Board](#2-public-trello-board)
   - [5. Screenshots](#5-screenshots)
   - [6. Technologies Used](#6-technologies-used)
+  - [7. Next Steps](#7-next-steps)
 
 ## 1. Deployed App:
 [Sforzando](https://sforzandodb.herokuapp.com/)
@@ -34,3 +35,9 @@ This link includes user stories, ERDs, and Wireframes
 * Trello for project management
 * Whimsical for wireframes
 * BoxySVG for logos
+
+## 7. Next Steps
+* Add more models (performances, books, larger works)
+* Add wishlist functionality
+* Add ability to filter pieces by period, composer, book, etc
+For a more granular overview of next steps for Sforzando, check out the Ice Box User Stories on my public Trello board, linked above. 
